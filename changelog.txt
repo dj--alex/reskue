@@ -1,0 +1,104 @@
+
+
+Reskue Build 126
++ Танки теперь могут отталкивать игрока врезавшись в него, выстрелы с усилителем также отталкивают игрока.
++ Добавлен режим lock_render_on_last_image, дублирует кадр если он не изменялся, увеличивает FPS.
++ Убран лут у учёных чтобы у игрока не было желания поживится их инвентарём вместо спасения.
++ Исправлена слишком долгая заморозка персонажа или лишение контроля
++ Некоторые ловушки срабатывают  на ГГ только если он в танке.
++ Дебаффы показываются теперь в виде красных букв в нижнем правом углу экрана.
++ Добавлен уровень громкости и уровень музыки. 0-10, музыка после окончания автоматически переключается на следующую.
++ Editor: На выбранный танк или пулю который просматривается или изменяется, теперь вешается иконка "прицел", которая будет видна и в игре.
+
+Reskue Windows b124bx (russian default)
+--
+Reskue Linux b128-EN
+https://yadi.sk/d/tle2wiwelaQzOA
+https://yadi.sk/d/h84ItlQSJe9WEg (no vsync)
+
+Reskue Android b156-EN-No-Vsync
+https://yadi.sk/d/6iONekC_jR-YjA
+
+Reskue Android b128-EN
+https://yadi.sk/d/r9AJkYp-wE7jSA
+
+Reskue Linux b124 (russian default)
+https://yadi.sk/d/LSElp604vy3p5w
+
+Reskue Android b124 (russian default)
+https://yadi.sk/d/vRJH6kMckJ_e6g
+
+Reskue Build 124
+
++ Игра по умолчанию включает русский язык. Только для этого билда.
++ Исправлена критическая ошибка в самом начале игры если human открывал дверь первее чем главный герой.
+Ошибка происходила в момент если начать игру но более ничего не делать. (стоять на месте)
++ Добавлена музыка в главное меню
++ Танки появляются с более разнообразными характеристиками и стараются уничтожить ваши припасы.
++ Добавлен особо усиленный танк-противникам, при его уничтожении он всегда взрывается.
++ Добавлены финальные титры, а также счётчик уничтоженных танков сохраняется и в сохранении, но не больше 250.
+
+
+Reskue Windows b124bx (russian default)
+https://yadi.sk/d/9kQBhqGhRr7Wtw 
+ 
+Reskue Linux b124 (russian default)
+https://yadi.sk/d/fWyv8WidrGbL1Q
+
+Reskue Android b124 (russian default)
+https://yadi.sk/d/AFo9626p2C5t4Q
+
+Reskue Windows b124-nobx (russian default)
+https://yadi.sk/d/XaJPhyZtU5UK3A
+
+Reskue v0.7 initial build
+
+Рад вам представить новую 2D retro игру написанную мной лично с использованием Lua, Love2d framework и собственного опыта.
+Практически весь движок написан собственноручно, т.к. фреймворк весьма низкоуровневый.
+ 
+На научную базу произошло нападение танков, вам необходимо спасти учёных и привести их к воздушному шлюзу который легко найти по трем железным дверям. (место назначения отмечено красными точками). Ученые после разморозки крайне непонятливы и обычно просто бегут от вас, однако умеют пользоватся телепортами и дверями. (а также обладают навыком "свистнуть аптечку" )  Для победы нужно спасти хотя бы 6 из 8 учёных.
+
+Карта перерисована из оригинальной игры Rescue 1986  + несколько дополнительных комнат.
+Кроме обычного арсенала из патрон и взрывчатки добавлены редкие вещи как усилители урона, защита и 
+набор ловушек (в оригинале ловушки есть, но их нельзя ставить самому). Ваши противники могут их взять вместо вас. 
+Тажке добавлены солнечные батареи, на которых работают станции лечения и многие ловушки.
+
+Отдельные элементы игры вы ранее могли видеть в игре M2k у которой с reskue общий движок.
+
+Это предварительная версия игры написанная для конкурса Джем победы..
+-Нет вменяемой окантовки GUI
+
+Video
+https://youtu.be/zIihyQ4VAzw
+
+Outdated
+Reskue Windows build v2bx initial release
+https://yadi.sk/d/EvUq6_EbVtWGtQ
+Reskue Linux build x64 initial release
+https://yadi.sk/d/MgblO09dOMZOEw
+Reskue Android build apk initial release
+https://yadi.sk/d/F9_Ggh7hH3L-Zw
+Reskue Windows build v1  (на случай если первая не заведётся)
+https://yadi.sk/d/F3RrxzzHBtApcA
+
+Как писался проект. Базовая основа - Lua + Love2d framework
+часть кода - например такие простые вещи как проигрыватель музыки были получены из opensource источников.
+но в основном все элементы для всех моих проектов я разрабатываю сам, 
+Например я не вижу смысла 2 или более раз заново писать тайловый менеджер ресурсов с нуля, однако он по возможности 
+тоже исправляется или улучшается. (хотя я вместо того чтобы взять готовый менеджер тайлов и анимации написал свои собственные)
+однако надо сказать - если возникают вопросы как реализовать такую то функцию я часто обсуждаю это в заграничных или наших чатах разработчиков.
+
+
+================================
+
+Reskue. I do remake and rewrite engine and add some new elements.
+And add possiblity to save and load and crossplatform. 
+Rescue in original created by mastertronic 1986.
+Many years i dream about to play it normally with modern PC and phones.
+Handwritten engine used  lua programming language and  Love2d framework 
+
+I do it for free without banners, lootpacks or etc. No ingame banners. 
+
+In Rescue you must save scientists from space base, invaded by evil pirates machines.
+Keyboard or touchpad.  Mouse allowed only in editor mode.
+========================
